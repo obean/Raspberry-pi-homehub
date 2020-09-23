@@ -20,6 +20,10 @@ def gone_dark():
 def how_hot_is_room():
     env_temp = str(hub.get_off_board_temperature())
     room_temp.value = "Room Temp: \n" + env_temp+"°C"
+
+def are_you_too_hot():
+    if hub.get_off_board_temperature < 25
+        app.yesno("temp is above normal", "Do you want to turn on the fan?")
     
     
 
